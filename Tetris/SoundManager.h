@@ -1,0 +1,16 @@
+//////////////////////////////////////////////////////////////
+///////////////  사운드를 출력하는 클래스  ///////////////////
+//////////////////////////////////////////////////////////////
+
+#pragma once
+#include "Include.h"
+
+class SoundManager : public Singleton<SoundManager>
+{
+public:
+	SoundManager() {};
+	~SoundManager() {};
+
+	void Play_Bg(wstring path);
+	void Play_Ef(wstring path);
+};
